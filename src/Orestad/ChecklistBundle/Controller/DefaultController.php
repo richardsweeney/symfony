@@ -155,4 +155,9 @@ class DefaultController extends Controller
         return $this->render('OrestadChecklistBundle:Default:storeall.html.twig', array('stores' => $stores));
     }
 
+    public function checklistCreateAction()
+    {
+        return $this->render('OrestadChecklistBundle:Default:checklistcreate.html.twig');
+    }
+
 }

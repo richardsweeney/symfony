@@ -36,4 +36,6 @@ orestad_checklist_store_add:
     requirements:
         _method:  GET|POST
 
-
+orestad_checklist_create_checklist:
+    pattern:  /checklist/create
+    defaults: { _controller: OrestadChecklistBundle:Default:checklistCreate }
