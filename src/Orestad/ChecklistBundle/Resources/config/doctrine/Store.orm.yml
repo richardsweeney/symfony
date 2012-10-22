@@ -1,0 +1,22 @@
+Orestad\ChecklistBundle\Entity\Store:
+    type: entity
+    table: null
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        name:
+            type: string
+            length: '255'
+        email:
+            type: string
+            length: '255'
+        tel:
+            type: string
+            length: '255'
+        address:
+            type: string
+            length: '255'
+    lifecycleCallbacks: {  }

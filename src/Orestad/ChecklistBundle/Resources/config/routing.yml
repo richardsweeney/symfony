@@ -1,0 +1,39 @@
+orestad_checklist_homepage:
+    pattern:  /home
+    defaults: { _controller: OrestadChecklistBundle:Default:index }
+
+orestad_checklist_login:
+    pattern:  /login
+    defaults: { _controller: OrestadChecklistBundle:Secured:login }
+
+orestad_checklist_about:
+    pattern:  /about
+    defaults: { _controller: OrestadChecklistBundle:Default:page }
+
+orestad_checklist_user:
+    pattern:  /user/{uid}
+    defaults: { _controller: OrestadChecklistBundle:Default:user }
+    requirements:
+        uid: \d+
+
+orestad_checklist_user_add:
+    pattern:  /user/add
+    defaults: { _controller: OrestadChecklistBundle:Default:userAdd }
+    requirements:
+        _method:  GET|POST
+
+orestad_checklist_user_all:
+    pattern:  /user/all
+    defaults: { _controller: OrestadChecklistBundle:Default:userAll }
+
+orestad_checklist_store_all:
+    pattern:  /store/all
+    defaults: { _controller: OrestadChecklistBundle:Default:storeAll }
+
+orestad_checklist_store_add:
+    pattern:  /store/add
+    defaults: { _controller: OrestadChecklistBundle:Default:storeAdd }
+    requirements:
+        _method:  GET|POST
+
+

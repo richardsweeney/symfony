@@ -1,0 +1,20 @@
+Orestad\ChecklistBundle\Entity\User:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: email
+    properties:
+        email:
+            - NotBlank: ~
+            - Email: ~
+        username:
+            - NotBlank: ~
+        password:
+            - NotBlank: ~
+
+Orestad\ChecklistBundle\Entity\Store:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: name
+    properties:
+        email:
+            - Email: ~
+        name:
+            - NotBlank: ~

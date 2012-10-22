@@ -1,0 +1,16 @@
+parameters:
+    database_driver: pdo_mysql
+    database_host: localhost
+    database_port: '3306'
+    database_name: symfony
+    database_user: root
+    database_password: root
+    mailer_transport: gmail
+    mailer_encryption: ssl
+    mailer_auth_mode: login
+    mailer_host: smtp.gmail.com
+    mailer_user: theorboman@gmail.com
+    mailer_password: mace(1676)
+    locale: en
+    secret: ea22c1105fe0fd63f56ece10bcecb72aeb
+    database_path: /Applications/MAMP/tmp/mysql/mysql.sock

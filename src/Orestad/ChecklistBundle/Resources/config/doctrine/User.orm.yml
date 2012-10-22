@@ -1,0 +1,23 @@
+Orestad\ChecklistBundle\Entity\User:
+    type: entity
+    table: null
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        username:
+            type: string
+            length: '25'
+        salt:
+            type: string
+            length: '32'
+        password:
+            type: string
+            length: '40'
+        email:
+            type: string
+            length: '60'
+            unique: true
+    lifecycleCallbacks: {  }

@@ -1,0 +1,9 @@
+{% extends "OrestadChecklistBundle::layout.html.twig" %}
+
+{% block content %}
+    <ul class="users-list">
+    {% for store in stores %}
+        <li>Id: {{ store.id }}. Name: {{ store.name }}. Email: <a href="mailto:{{ store.email }}">{{ store.email }}</a>. Tel: {{ store.tel }}. Address {{ store.address }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

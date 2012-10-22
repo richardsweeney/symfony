@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Checklist{% endblock %}</title>
+        <!--<link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" />-->
+        <!--<link rel="stylesheet" href="{{ asset('bundles/acmedemo/css/demo.css') }}" />-->
+    </head>
+    <body>
+
+        {% block navigation %}
+            <nav>
+                <ul class="navigation">
+                    <li><a href="{{ path('orestad_checklist_homepage') }}">Home</a></li>
+                    <li><a href="{{ path('orestad_checklist_about') }}">About</a></li>
+                    <li><a href="{{ path('orestad_checklist_user_all') }}">Users</a></li>
+                    <li><a href="{{ path('orestad_checklist_user_add') }}">Add User</a></li>
+                    <li><a href="{{ path('orestad_checklist_store_all') }}">Stores</a></li>
+                    <li><a href="{{ path('orestad_checklist_store_add') }}">Add Store</a></li>
+                </ul>
+            </nav>
+        {% endblock %}
+
+        {% block header %}
+            <h1>A Header</h1>
+        {% endblock %}
+        {% if app.session.hasFlash('orestad-notice') %}
+            <div class="orestad-notice">
+                {{ app.session.flash('orestad-notice') }}
+            </div>
+        {% endif %}
+
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+    </body>
+</html>
